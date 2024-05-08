@@ -6,11 +6,11 @@
 		○ Route 53 -  highly scalable Domain Name System (DNS) web service. It allows you to register domain names, route internet traffic to the appropriate resources (such as Amazon EC2 instances, S3 buckets, or load balancers), and manage the domain's DNS records dynamically.
 		○ goDaddy -get a domain
 
-# install kubectl
-# chmod +x ./kubectl
+ install kubectl
+ chmod +x ./kubectl
 
-# mv kubectl to /usr/local/bin
-# To create cluster
+ mv kubectl to /usr/local/bin
+ To create cluster
 kops create cluster --name=kubevpro.groophy.xyz \ 
 --state=s3://vprofile-kops10 --zones=us-east-1a,us-east-1b \ 
 --node-count=2 --node-size=t3.small --master-size=t3.medium --dns-zone=kubevpro.groophy.xyz \ 
